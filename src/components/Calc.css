@@ -1,0 +1,71 @@
+@import url('../Styles/desktop.css');
+
+.calcContainer{
+    border-radius: 20px;
+    background-color: hsl(183, 100%, 15%);
+    padding: 50px 20px 20px 20px;
+    margin-top: 30px;
+
+    animation: showCalc 1s ease-out 1.5s forwards;
+    position: relative;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.336);
+    position: relative;
+}
+
+.categ{
+    color: white;
+    font-size: 16px;
+}
+
+.pPerson{
+    color: hsl(184, 14%, 56%);
+    font-size: 14px;
+}
+
+.finalCusts{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: hsl(172, 67%, 45%);
+}
+
+.amountCusts,.totalCusts{
+    font-size: 2em;
+    max-width: 250px;
+    overflow-x: auto;
+    animation: showCusts .2 ease forwards;
+
+}
+
+@keyframes showCusts{
+    from{
+        transform: scale(0.99)
+    }
+    to{
+        transform: scale(1)
+    }
+}
+
+.amountCusts::before,.totalCusts::before{
+    content: '$'
+}
+
+.resetButton{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    cursor: not-allowed;
+    transition: all .5s;
+}
+
+.resetButton:hover{
+    background-color: hsl(186, 14%, 43%);
+}
+
+.msgError{
+    margin-left: 5px;
+}

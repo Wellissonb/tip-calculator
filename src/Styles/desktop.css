@@ -1,0 +1,53 @@
+@media screen and (min-width: 1000px){
+
+.main{
+    max-width: 75vw !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px !important;
+    height: 500px;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.calcContainer{
+    width: 50%;
+    padding: 40px !important;
+    height: 420px;
+}
+
+.formContainer{
+    width: 50%;
+}
+
+.buttonsContainer{
+    grid-template-columns: repeat(3, 30%) !important;
+    margin-bottom: 0px;
+    justify-content: flex-start !important;
+}
+
+.resetButton{
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 110px;
+    display: block;
+    width: 95%;
+    position: absolute;
+    top: 230px;
+    width: 85% !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.totalCusts,.amountCusts{
+    font-size: 3.5em !important;
+}
+
+.finalCusts{
+    align-items: center;
+}
+
+}
+
